@@ -1,0 +1,8 @@
+<!-- myS3FilePreviewCarousel.html -->
+<template>
+    <lightning-carousel>
+        <template for:each={s3LinkPreviews} for:item="preview">
+            <img key={preview.alt} src={preview.preview} alt={preview.alt} />
+        </template>
+    </lightning-carousel>
+</template>
